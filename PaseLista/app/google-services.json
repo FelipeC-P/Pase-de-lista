@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "746338368879",
+    "project_id": "pasedelista-1da88",
+    "storage_bucket": "pasedelista-1da88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746338368879:android:7a885a3896dd34c967bc9a",
+        "android_client_info": {
+          "package_name": "com.example.paselista"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf3trPYHskUunkDkU_5iP50P4VPPmqoP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

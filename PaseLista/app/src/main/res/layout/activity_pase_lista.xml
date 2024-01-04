@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaseLista">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtMateria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Materia"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/layoutAddClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Alumnos"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:layout_margin="7dp"
+                android:textStyle="bold|italic"/>
+
+            <Button
+                android:id="@+id/btnAddAlumno"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:text="Agregar Alumno"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutAddAlumnoOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/editTextAlumno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre del Alumno"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"/>
+
+            <Button
+                android:id="@+id/btnConfirmAddAlumno"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Confirmar"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewAlumnos"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginStart="7dp"
+            android:layout_below="@id/layoutAddClass"/>
+
+        <Button
+            android:id="@+id/btnGuardarAsistencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Guardar Asistencia"
+            android:layout_below="@id/recyclerViewAlumnos"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btnConsultaAsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Consultar Asistencias"
+            android:layout_below="@id/btnGuardarAsistencia"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+</RelativeLayout>
