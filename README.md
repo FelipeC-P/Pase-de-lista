@@ -1,4 +1,4 @@
-#Pase de lista 
+## Pase de Lista App
 
 Esta aplicación, desarrollada en Java y utilizando Firebase como base de datos, se centra en simplificar el proceso de toma de asistencia en entornos educativos. La aplicación proporciona las siguientes funcionalidades clave:
 - **Gestión de Materias:** Permite agregar y seleccionar materias para un fácil seguimiento.
